@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en-us"><head>
+<meta charset="utf-8">
+<meta name="publisher" content="blankdots.com">
+<meta name="author" content="Stefan Negru">
+<meta name="keywords" content="personas, template">
+<meta name="description" content="Personas Template with microdata">
+<meta name="robots" content="noindex,nofollow">
+<!-- <link rel="stylesheet" type="text/css" href="style.css"> -->
+<title>Personas Template</title>
+<style></style><style type="text/css">@font-face { font-family: Roboto; src: url("chrome-extension://mcgbeeipkmelnpldkobichboakdfaeon/css/Roboto-Regular.ttf"); }</style></head>
+<style>
+	img { border: none; }
+ul {margin:0; list-style-type:none;}
+fieldset { border: none; margin:0; padding: 0;}
+a {color:#3CA2A2;}
+a:hover {color:#215A6D;}
+legend { display: none; }
+.hidden { display:none;}
+.clear {clear:both;}
+
+body{
+	margin:0;
+	padding:0;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:14px;
+	background:#fff;
+}
+
+header {padding:5px; background-color: #2D2D29; overflow: hidden;}
+header h1 { margin:5px 10px 0px 10px; padding:0; color: #DFECE6; font-size:1.8em; float:left;}
+header #logo {float:right; margin: 0;}
+article.persona {background-color: #fff; border:solid 1px #493736; float:left; margin:5px 10px; width:48%; }
+.personaInfo figure {margin:0; padding: 0;}
+.personaInfo {border-bottom:solid 1px #493736; padding:5px; overflow: hidden;}
+.personaInfo img {float:left; }
+.personaInfo .personaBackground {float:right; width:73%; }
+.personaInfo h3, .personaInfo .personaBackground h4, .personaInfo .personaBackground h5, .personaDetails h4, .personaDetails h5, .personaScenarios h5, .otherDetails h5 {margin:0 0 5px; padding:5px; background-color: #2D2D29; color: #DFECE6; }
+.personaInfo .personaBackground ul, .personaDetails ul, .personaScenarios ul, .otherDetails ul {margin:0; padding:0 5px;}
+.personaInfo p, .personaDetails p, .personaScenarios p, .otherDetails p {margin:2px; padding:0;}
+
+.personaDetails ul li {list-style-type: square; margin:0 0 0 15px;}
+.personaDetails {border-bottom:solid 1px #493736; overflow: hidden; padding: 5px;}
+.personaDetails .detailsLeft h5 {padding: 5px 5px 5px 10px;}
+.personaDetails .detailsLeft {width:38%; float:left; margin-right:5px;}
+.personaDetails .detailsRight {width:61%; float: right; }
+
+.personaScenarios, .otherDetails {clear:both; padding:5px; overflow: hidden;}
+.personaScenarios {border-bottom:solid 1px #493736;}
+.title {clear:both; margin:0 0 5px; padding:5px; background-color: #2D2D29; color: #DFECE6; }
+.sectionApp {margin:5px 10px; padding:0;}
+.sectionApp ul{margin:5px 10px; padding:0;list-style-type:circle;}
+
+footer {clear:both; margin:5px 10px; padding:0;}
+
+@media screen and (max-width:1200px){
+	.personaInfo .personaBackground {float:left; width:100%; margin-top:5px;}
+}
+@media screen and (max-width:1120px){
+	.personaDetails .detailsLeft, .personaDetails .detailsRight {width:100%; float: left; }
+	article.persona {width:98%; margin: 5px 2px;} 
+}
+
+@media print {
+	
+	body{
+		margin:0;
+		padding:0;
+		font-family:Arial, Helvetica, sans-serif;
+		font-size:14px;
+		background:#fff;
+	}
+	header {margin: 0;}
+	header #logo {display: none;}
+	article.persona {width:99%; margin:10px 2px;} 
+	.personaInfo h3, .personaInfo .personaBackground h4, .personaInfo .personaBackground h5, .personaDetails h4, .personaDetails h5, .personaScenarios h5, .otherDetails h5 {margin:0 0 5px; padding:5px; background-color: #ccc; color: #111; 
+	-webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px;}
+	.personaDetails .detailsLeft {width:38%; float:left; margin-right:5px;}
+	.personaDetails .detailsRight {width:61%; float: right; }
+	.personaScenarios {border-bottom:solid 1px #493736;}
+}
+
+</style>
+<body style>
+	<section>
+		<h1 class="title" style="font-size: 25px;">Introduction</h1>
+		<div class="sectionApp">
+			<p>
+				The zone we, Crețu Alexandru-Cristian and Drăgoi George-Ștefan decided to explore is a popular gym in the city.
+			</p>
+		</div>
+	</section>
+<header>
+	<h1>Personas Template</h1>
+	<span id="logo"><a href="http://www.w3.org/html/logo/">
+<img src="http://www.w3.org/html/logo/badge/html5-badge-h-css3-semantics.png" width="83" height="32" alt="HTML5 Powered with CSS3 / Styling, and Semantics" title="HTML5 Powered with CSS3 / Styling, and Semantics">
+</a></span>
+
+</header>
+
+<section>
+	<h1 class="hidden">Personas Section</h1>
+	<article itemscope="" itemtype="http://schema.org/Person" class="persona">
+		<div class="personaInfo">
+			<h3>Type: Primary</h3>
+			<figure>
+				<img itemprop="image" src="https://www.random-name-generator.com/images/faces/female-white/37.jpg?ezimgfmt=rs:148x143/rscb1/ngcb1/notWebP" alt="persona image">
+			</figure>
+			<div class="personaBackground">				
+				<h4>Name: <span itemprop="givenName">Livia</span> <span itemprop="familyName">Mărguță</span></h4>
+					<h5>Background</h5>
+					<ul>
+						<li><strong>Date of Birth:</strong> <time itemprop="birthDate" datetime="1990-10-23">3/10/1992</time></li>
+						<li><strong>Gender:</strong> <span itemprop="gender">Female</span></li>
+						<li itemprop="location" itemscope="" itemtype="http://schema.org/Place"><strong>Location:</strong> <span itemprop="name">Iasi, Romania</span></li>
+						<li itemprop="worksFor" itemscope="" itemtype="http://schema.org/Organization"><strong>Work place:</strong> <span itemprop="name"></span><span itemprop="jobTitle">Marketing Manager</span></li>
+						
+					</ul>
+			</div>
+		</div>
+		<div class="personaDetails">
+			<div class="detailsLeft">
+				<div class="leftGroup">
+					<h5>Main Points</h5>
+          <p>Livia is a 30-year-old marketing manager who aims to stay in shape and maintain a healthy lifestyle while improving her overall fitness and stamina. She enjoys participating in group fitness classes and meeting new people. However, her pain points include the limited availability of group fitness classes due to overcrowding, difficulty tracking progress and setting goals without personalized guidance, inconvenient hours of operation due to her work schedule, and lack of community engagement and social events.
+          </p>
+					<!-- <ul>
+						<li>Experience with certain products;</li>
+						<li>Dislikes about certain aspects;</li>
+						<li>Disabilities relevant to our research;</li>
+						<li>Working environment;</li>
+						<li>Social connections;</li>
+						<li>The user's goals.</li>
+					</ul> -->
+				</div>
+				<div class="leftGroup">
+					<h5>Goals</h5>
+					<ul>
+						<li>Stay in shape and maintain a healthy lifestyle</li>
+						<li>Improve overall fitness and stamina</li>
+						<li>Participate in group fitness classes</li>
+						<li>Meet new people</li>
+					</ul>
+				</div>
+				<div class="leftGroup">
+					<h5>Frustrations and Pain Points</h5>
+					<ul>
+						<li>Limited availability of group fitness classes due to overcrowding</li>
+						<li>Difficulty tracking progress and setting goals without personalized guidance</li>
+						<li>Inconvenient hours of operation due to work schedule</li>
+						<li>Lack of community engagement and social events</li>
+					</ul>
+				</div>
+			</div>
+			<div itemprop="description" class="detailsRight">
+				<h5>Detailed Description</h5>
+				<p>Livia is a 30-year-old marketing manager who leads a busy lifestyle. She enjoys staying in shape and maintaining a healthy lifestyle, which is why she has joined a gym. Her goals are to improve her overall fitness and stamina, participate in group fitness classes, meet new people, and engage with the community. She has tried various fitness apps and trackers but finds it difficult to track progress and set goals without personalized guidance. Due to her work schedule, she can only attend the gym during inconvenient hours of operation. She is frustrated by the limited availability of group fitness classes due to overcrowding, and she feels that there is a lack of community engagement and social events at the gym. Livia's practical goals include being efficient with her time and avoiding meetings that are not relevant to her job. Her personal goal is to feel motivated and engaged in her fitness journey, and she enjoys having fun while achieving her goals. The business goal for Livia is to retain her membership and to recommend the gym to her friends and colleagues.
+        </p>
+				<h5>References</h5>
+				<ul>
+					<li>Fluid <a href="http://wiki.fluidproject.org/display/fluid/Personas">Personas</a>;</li>
+					<li>An introduction to personas and <a href="http://www.steptwo.com.au/papers/kmc_personas">how to create them</a>;</li>
+					<li itemscope="" itemtype="http://schema.org/Book"><span itemprop="name"><a href="http://www.amazon.com/Persona-Lifecycle-Throughout-Interactive-Technologies/dp/0125662513/ref=pd_bbs_sr_1?ie=UTF8&amp;s=books&amp;qid=1240423894&amp;sr=8-1" class="external-link" rel="nofollow">The Persona Lifecycle, Keeping People in Mind Throughout Product Design</a></span>, <span itemprop="author">John Pruitt &amp; Tamara Adlin</span>;</li>
+					<li>This version of Personas Template includes microdata markup using <a href="schema.org/">schema.org Schemas</a>.</li>
+				</ul>
+			</div>
+		</div>
+		<div class="personaScenarios">
+			<h5>Scenarios</h5>
+			<p> <strong>Scenario 1</strong>: Livia decides to attend a new group fitness class at the gym after work. She arrives to find that the class is already at maximum capacity, and she is turned away. Frustrated, she leaves the gym and decides to look for alternative fitness options elsewhere. </p> 
+      <p>End points: Livia may decide to look for another gym or fitness studio that offers more class options or has a larger capacity.</p>
+      <p><strong>Scenario 2</strong>: Livia uses the gym's app to track her progress and set goals for her workouts. She receives personalized recommendations for classes and workout plans based on her fitness level and preferences. She attends these classes and feels motivated by her progress, ultimately reaching her fitness goals.</p>  
+      <p>End points: Livia becomes a loyal member of the gym and recommends it to her friends and colleagues.</p> 
+		</div>
+	</article>
+	<article itemscope="" itemtype="http://schema.org/Person" class="persona">
+		<div class="personaInfo">
+			<h3>Type: Secondary</h3>
+			<figure>
+				<img itemprop="image" src="https://www.random-name-generator.com/images/faces/male-white/09.jpg?ezimgfmt=rs:148x143/rscb1/ng:webp/ngcb1" alt="persona image" width="148" height="142">
+			</figure>
+			<div class="personaBackground">				
+				<h4>Name: <span itemprop="givenName">Mihai</span> <span itemprop="familyName">Ghiță</span></h4>
+					<h5>Background</h5>
+					<ul>
+						<li><strong>Date of Birth:</strong> <time itemprop="birthDate" datetime="1990-10-23">7/6/1970</time></li>
+						<li><strong>Gender:</strong> <span itemprop="gender">Male</span></li>
+						<li itemprop="location" itemscope="" itemtype="http://schema.org/Place"><strong>Location:</strong> <span itemprop="name">Iasi, Romania</span></li>
+						<li itemprop="worksFor" itemscope="" itemtype="http://schema.org/Organization"><strong>Work place:</strong> <span itemprop="name">Retired</span></li>
+					</ul>
+			</div>
+		</div>
+		<div class="personaDetails">
+			<div class="detailsLeft">
+				<div class="leftGroup">
+					<h5>Main Points</h5>
+					<p>Mihai, a retired 50-year-old, wants to stay healthy and active while managing and preventing health conditions such as high blood pressure and arthritis. He also enjoys socializing with other members of the gym and aims to improve his balance and flexibility to reduce the risk of falls.</p>
+					</ul>
+				</div>
+				<div class="leftGroup">
+					<h5>Goals</h5>
+					<ul>
+						<li>Stay healthy and active;</li>
+						<li>Manage and prevent health conditions such as high blood pressure and arthritis;</li>
+						<li>Socialize with other members of the gym;</li>
+						<li>Improve balance and flexibility to reduce the risk of falls.</li>
+					</ul>
+				</div>
+				<div class="leftGroup">
+					<h5>Frustrations and Pain Points</h5>
+					<ul>
+						<li>Limited accessibility due to physical limitations, such as mobility issues;</li>
+						<li>Limited knowledge and confidence in using gym equipment;</li>
+						<li>Inadequate lighting or signage that can make it difficult to navigate the gym;</li>
+						<li>Lack of specialized classes or programs for seniors or people with health conditions.</li>
+					</ul>
+				</div>
+			</div>
+			<div itemprop="description" class="detailsRight">
+				<h5>Detailed Description</h5>
+				<p>Mihai is a 50-year-old retired individual who values his health and staying active. He has joined a gym to stay healthy and manage his health conditions such as high blood pressure and arthritis. He enjoys socializing with other gym members and improving his balance and flexibility to reduce the risk of falls. He is not as tech-savvy as Livia and prefers to track his progress with pen and paper. Mihai's practical goal is to maintain his health and avoid health issues. His personal goal is to feel independent and self-sufficient despite his health conditions. The business goal for Mihai is to retain his membership and to increase the overall satisfaction of the gym's older members. He has prior experience with certain gym equipment and has been a member of various gyms in the past. His frequency of gym use varies depending on his health condition, but he tries to visit the gym at least three times a week.</p>
+				<h5>References</h5>
+				<ul>
+					<li>Fluid <a href="http://wiki.fluidproject.org/display/fluid/Personas">Personas</a>;</li>
+					<li>An introduction to personas and <a href="http://www.steptwo.com.au/papers/kmc_personas">how to create them</a>;</li>
+					<li itemscope="" itemtype="http://schema.org/Book"><span itemprop="name"><a href="http://www.amazon.com/Persona-Lifecycle-Throughout-Interactive-Technologies/dp/0125662513/ref=pd_bbs_sr_1?ie=UTF8&amp;s=books&amp;qid=1240423894&amp;sr=8-1" class="external-link" rel="nofollow">The Persona Lifecycle, Keeping People in Mind Throughout Product Design</a></span>, <span itemprop="author">John Pruitt &amp; Tamara Adlin</span>;</li>
+					<li>This version of Personas Template includes microdata markup using <a href="schema.org/">schema.org Schemas</a>.</li>
+				</ul>
+			</div>
+		</div>
+		<div class="personaScenarios">
+			<h5>Scenarios</h5>
+			<p> <strong> Scenario 1</strong>: Mihai attends a yoga class at the gym and struggles with some of the poses due to his arthritis. He feels embarrassed and frustrated, and decides to stop attending yoga classes altogether. </p> 
+				<p>End points: Mihai may switch to other low-impact workouts or look for a gym that offers more classes tailored to his needs.</p>
+        <p><strong> Scenario 2</strong>: Mihai participates in a social event at the gym where he meets other members and forms new connections. He attends regular group fitness classes and feels a sense of community and belonging. </p>
+					<p> End points: Mihai continues to attend the gym, recommends it to his friends, and becomes an advocate for the gym's community-building initiatives.</p>
+		</div>
+		
+	</article>		
+
+
+</section>
+<section>
+<h1 class="title">Context of Use</h1>
+<div class="sectionApp">
+
+
+<strong> Context of Use:</strong>
+
+<p>	The context of use for the gym product is primarily physical activity and fitness. The product is designed to be used in a gym setting, where people go to exercise and improve their overall health and wellness. The context of use is important because it determines the type of features and interactions that the product needs to have in order to meet the needs of the users.</p>
+	<strong> Main Audience(s):</strong>
+	<p>
+	The main audience for the gym product includes people of all ages and fitness levels who want to exercise and improve their overall health and wellness. However, the primary audience for this product is people who live a sedentary lifestyle and want to start exercising to improve their health. In our example, Livia and Mihai represent two of the main audience groups.
+</p>
+</div>
+<h1 class="title">Empiric Laws</h1>
+<div class="sectionApp">
+<strong> Fitts' Law:</strong>
+<p>The starting and stopping buttons for a workout, for example, should be sized and spaced in a way that makes them easy to locate and hit accurately, even while the user is in the middle of the exercise. Additionally, they should be positioned in a convenient and accessible location, taking into consideration the user's typical range of motion and potential ergonomic limitations. By following these guidelines, designers can help ensure that the gym application is both efficient and user-friendly, promoting engagement and satisfaction among its primary audience of fitness enthusiasts.</p>
+<strong> Hick' Law:</strong>
+<p>This law can be applied to the design of workout routines and programs. Too many options can overwhelm the user and make it difficult to choose a workout that meets their needs. Instead, the product should provide a curated list of workout options based on the user's goals and fitness level.</p>
+<strong> Steering' Law:</strong>
+<p>This law can be applied to the design of interactive elements such as sliders and progress bars. For example, a progress bar that tracks the user's workout should be large enough to easily track their progress, with enough space between the start and end points to make it easy to adjust.</p>
+</div>
+<h1 class="title">Metaphors, Idioms, Affordances and Visual Variables</h1>
+<div class="sectionApp">
+
+<p>Metaphors and idioms can be used in the gym app to create a more intuitive and familiar experience for users. For example, using the metaphor of a personal trainer, the app can guide users through their workouts by providing personalized recommendations and tracking their progress. This metaphor can be reinforced through the use of language and imagery that is associated with personal trainers, such as motivational quotes and images of athletes.
+
+Affordances can be used to make it clear to users how they should interact with different parts of the app. For example, using a large and prominently placed "Start Workout" button with a distinctive color and shape can make it easy for users to know how to begin their workout. Similarly, using a swipe gesture to move between different exercises can make it clear to users how to navigate through the workout.
+	
+Visual variables such as color, size, and contrast can be used to draw attention to important elements of the app and create a more visually engaging experience. For example, using a bright color for the "Finish Workout" button can draw the user's attention to this important action, while using a larger font size for important information can make it more prominent and easier to read.
+</p>
+
+</div>
+<h1 class="title">Solutions of Improvment</h1>
+<div class="sectionApp">
+<p>
+	<strong> Augmented Reality (AR) UI:</strong> The gym app could integrate an AR UI that would allow users to see virtual objects overlaid onto the real-world environment. For 
+	example, a user could point their phone at a piece of gym equipment and see instructions for how to use it or view a demonstration video. This would provide a 
+	more interactive and engaging experience for users, as well as make it easier for them to navigate the gym.
+</p>
+<p>
+<strong>Conversational UI:</strong> The gym app could also include a conversational UI that would allow users to interact with the app using natural language. This could be 
+particularly helpful for users who are new to the gym or who have difficulty navigating the equipment. For example, a user could ask the app "What's the best way 
+to use the treadmill?" and receive a personalized response with instructions and tips.
+</p>
+<p>
+<strong>Visual Enhancements:</strong> The gym app could also incorporate visual enhancements to make it easier for users to navigate the gym. For example, low-contrast road 
+indicators could be automatically enhanced to make them more visible, or color-coded paths could be used to guide users to their desired equipment or workout 
+areas.
+</p>
+<p>
+<strong>Smart Equipment Integration: </strong>Another potential solution would be to integrate the app with smart gym equipment. This would allow users to track their progress and 
+receive personalized workout recommendations based on their fitness goals and history. The app could also automatically adjust the equipment settings to match the 
+user's preferences, making it easier and more efficient to use.
+</p>
+</div>
+</section>
+<section>
+	<h1 class="title">Contributions</h1>
+	<div class="sectionApp">
+	<ul>
+		<li>Crețu Alexandru-Cristian</li>
+			<ul>
+				<li>Mihai Ghiță's Persona</li>
+				<li>Context of Use</li>
+				<li>Solutions of Improvment</li>
+			</ul>
+		<li>Drăgoi George-Ștefan</li>
+			<ul>
+				<li>Livia Mărguță's Persona</li>
+				<li>Empiric Laws</li>
+				<li>Metaphors, Idioms, Affordances and Visual Variables</li>
+			</ul>
+	</ul>
+</div>
+</section>
+
+<footer id="footer">
+	<span id="license"><a href="http://creativecommons.org/licenses/by/3.0/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by/3.0/80x15.png"></a></span>
+</footer>
+</body></html>
